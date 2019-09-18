@@ -8,6 +8,7 @@ void Shopping::PushList(Goods object) {
 
 // Get Goods object from end of shopping_list_ vector
 Goods Shopping::GetLastElement() {
+  if (shopping_list.empty()) assert(false); 
   return shopping_list_.back();
 }
 
