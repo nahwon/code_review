@@ -3,6 +3,10 @@
 
 // Push Goods object to shopping_list_ vector
 void Shopping::PushList(Goods object) {
+  for (std::vector<Goods>::iterator i = shopping_list_.begin();
+      i != shopping_list_.end(); i++) {
+        if (object.GetIndex() == i->GetIndex()) assert(false);
+  }  
   shopping_list_.push_back(object);
 }
 
