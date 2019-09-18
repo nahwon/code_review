@@ -1,2 +1,5 @@
 # code_review
-code review practice
+code review practice!
+
+# aim
+practice code review
